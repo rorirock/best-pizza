@@ -1,0 +1,55 @@
+@import '_vars'
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px)
+    .container-login
+        background: #FFF 
+        width:100%
+        text-align: center
+    img.logo-best-pizza
+        content: url($Login-Best-Pizza)
+        width:200px
+        heigth:200px
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px)
+    .container-login
+        background: #FFF 
+        width:100%
+        text-align: center
+    img.logo-best-pizza
+        content: url($Login-Best-Pizza)
+        width:200px
+        heigth:200px
+
+
+/*X-Small devices (portrait phones, less than 576px)  */ 
+@media (min-width: 320px) and (max-width: 767.98px)
+    .container-login
+        background: #FFF
+        width:100%
+        text-align: center
+        position:absolute
+
+    img.logo-best-pizza
+        content: url()
+
+    form>div 
+        padding-left: 6%
+        padding-right: 6%
+
+    .icon-pass
+        content: url($ic-contrase-a)
+        width: 22px
+
+    .icon-user
+        content: url($ic-usuario)
+        width: 22px
+
+    .btn-login
+        width: 88%
+        margin-bottom: 5%
+        margin-top: 2%

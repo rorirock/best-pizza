@@ -17,8 +17,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     from console execute "ng serve" or "npm start" in project folder
     go to your preferred browser and go to the default URL which is http://localhost:4200/ or http://localhost:4200/login 
 
-## NOTA LOGIN
+## NOTE LOGIN
    users and passwords
+   
     1. pperez@perez.com
        pperezs123
        

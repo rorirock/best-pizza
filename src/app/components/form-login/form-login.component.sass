@@ -1,33 +1,69 @@
 @import '_vars'
 
-
-
-/*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px)
+    .error-login
+        width: 60%
+        margin-left: 20%
+        font-size: 14px
+        margin-top: 2%
     .container-login
         background: #FFF 
         width:100%
         text-align: center
     img.logo-best-pizza
         content: url($Login-Best-Pizza)
-        width:200px
-        heigth:200px
+        width:150px
+        heigth:150px
+        margin-bottom:3%
+    .div-input>input
+        border-radius: 0px
+    .div-input>span
+        border-radius: 0px
+    .icon-pass
+        content: url($ic-contrase-a)
+        width: 20px
+    .icon-user
+        content: url($ic-usuario)
+        width: 20px
+    .div-input
+        border-radius:0px
+        margin-left: 20%
+        width: 60%
+    .btn-login
+        border-radius:0px
+        width: 60%
+        margin-top: 2%
 
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px)
+@media (max-width: 991px) and (min-width: 768px)
     .container-login
         background: #FFF 
         width:100%
         text-align: center
+
     img.logo-best-pizza
         content: url($Login-Best-Pizza)
-        width:200px
-        heigth:200px
+        width: 180px
+        height: 120px
 
+    .icon-pass
+        content: url($ic-contrase-a)
+        width: 30px
 
-/*X-Small devices (portrait phones, less than 576px)  */ 
-@media (min-width: 320px) and (max-width: 767.98px)
+    .icon-user
+        content: url($ic-usuario)
+        width: 30px
+    
+    .btn-login
+        width: 88%
+        margin-bottom: 5%
+        margin-top: 2%
+
+@media (max-width: 767.98px) and (min-width: 320px) 
+    .error-login
+        width: 88%
+        margin-left: 6%
+        margin-top: 2%
+        font-size: 14px
     .container-login
         background: #FFF
         width:100%

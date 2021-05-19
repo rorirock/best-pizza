@@ -1,0 +1,33 @@
+<div class="container-list">
+    <div class="row  header">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <span class="subtitle">Pizzeria</span>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-salir">  
+            <button class="btn btn-light" (click)="exit()">  
+                Salir
+            </button>
+        </div>
+    </div>
+    <div>
+        <h4>Tiendas</h4>
+        
+        <span class="slogan">Escoge tu pizzeria favorita</span>
+    </div>
+
+
+    <div class="input-group rounded input-search">
+        <input type="search" class="form-control rounded" [(ngModel)]="nameStore" name="nameStore" placeholder="Buscar" aria-label="Search"
+        aria-describedby="search-addon" />
+         <button (click)="searchRestaurant()"  class="btn btn-outline-primary" type="button">Buscar</button>
+    </div>
+    <div class="row container-restaurants">
+            <a href="/restaurante/{{item.id}}" class="figure col-6 col-sm-6 col-lg-4 col-md-4" *ngFor="let item of filterrestaurants, index as i">
+                <img [src]="imgUrl[i]" class="a-img img-fluid rounded" >
+                <figcaption class="figure-caption name">{{item.name}}</figcaption>
+                <figcaption class="figure-caption adress">{{item.address}}</figcaption>
+            </a>
+    </div>
+
+    
+</div>

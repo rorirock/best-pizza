@@ -5,7 +5,7 @@ import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
 import { FormLoginComponent } from '../../components/form-login/form-login.component';
 import { PizzaComponent } from '../../components/pizza/pizza.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,11 @@ import { PizzaComponent } from '../../components/pizza/pizza.component';
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    FormsModule
+  ],
+  exports:[
+    PizzaComponent
   ]
 })
 export class LoginModule { }

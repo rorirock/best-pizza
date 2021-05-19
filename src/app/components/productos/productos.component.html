@@ -1,0 +1,19 @@
+<div class="row">
+
+    <div  class="col-sm-12 col-md-12 col-lg-12 col-xl-12 content-img-restaurant">
+        <img class="img-restaurant"/>
+        <h5 class="title">{{restaurante[0].name}}</h5>
+        <span>{{restaurante[0].description}}</span>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-6" *ngFor="let producto of productos">
+            <div class="card-pizza" style="border:none;">
+                <img class="img-producto">
+                <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

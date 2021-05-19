@@ -1,33 +1,47 @@
 @import '_vars'
 
-
-/*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px)
+    @keyframes spin 
+        from  
+            transform: rotate(360deg)
+        to  
+            transform: rotate(0deg)
+
     img.pizza
        content: url($Pizza)
        width: 400px
        height: 400px
-       
+       animation: spin 100000ms  infinite
+    
+    .container-pizza
+        text-align: center
+        margin-top: 23%
+        margin-bottom: 19%
 
-/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px)
+    @keyframes spin 
+        from  
+            transform: rotate(360deg)
+        to  
+            transform: rotate(0deg)
+
     img.pizza
        content: url($Pizza)
        width: 300px
        height: 300px
+       animation: spin 100000ms  infinite
     
     .container-pizza
         text-align: center
         background: url($imagebkg)
+    
 
-/*X-Small devices (portrait phones, less than 576px)  */ 
-@media (min-width: 320px) and (max-width: 767.98px)
-
+@media (max-width: 767px) and (min-width: 320px)
     @keyframes spin 
         from  
-            transform: rotate(0deg)
-        to  
             transform: rotate(360deg)
+        to  
+            transform: rotate(0deg)
  
     img.pizza
        content: url($Pizza)
@@ -35,11 +49,8 @@
        height: 200px
        margin-top: 5%
        position:relative
-       animation: spin 50000ms linear infinite
+       animation: spin 100000ms  infinite
     
     .container-pizza
         text-align: center
-        
-
-
     

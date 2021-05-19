@@ -7,19 +7,21 @@
 
     <form>
         <br>
-        <div class="input-group flex-nowrap">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        <div class="input-group flex-nowrap div-input">
+            <input type="text" class="form-control" placeholder="Usuario" [(ngModel)]="userName" name="userName" aria-label="Username" aria-describedby="addon-wrapping">
             <span class="input-group-text"><img class="icon-user"/></span>
         </div>
         <br>
-        <div class="input-group flex-nowrap">
-            <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="addon-wrapping">
+        <div class="input-group flex-nowrap div-input">
+            <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password" name="password" aria-label="password" aria-describedby="addon-wrapping">
             <span class="input-group-text"><img class="icon-pass"/></span>
+        </div>
+        <div class="alert alert-warning error-login" role="alert" [hidden]="errorLogin">
+            Usuario o contraseña incorrectos.
         </div>
         <br>
             <span>¿Olvidastes tu contraseña?</span>
         <br>
-            <button type="button" class="btn btn-warning btn-login">Iniciar sesión</button>
+            <button type="button" class="btn btn-warning btn-login" (click)="validate()">Iniciar sesión</button>
     </form>
-
 </div>
